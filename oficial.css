@@ -1,0 +1,135 @@
+
+
+.menu {
+  display: block;
+  position: relative;
+  top: -7px;
+  left: 420px;
+  height: 76px;
+  width: 120px;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Bordes superiores */
+
+.menu.servicios {
+  border-top: #ffc000 9px solid;
+}
+
+.menu.recursos {
+  border-top: #b81800 0.6em solid;
+}
+
+.menu.proyectos {
+  border-top: #00a53c 0.6em solid;
+}
+
+.menu.contacto {
+  border-top: #9600b4 0.6em solid;
+}
+
+/* Atributos y transición */
+
+.menu > span {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  left: 20;
+  top: 50;
+  width: 500%;
+  height: 0%;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+
+.menu:after, .menu > span > span {
+  display: block;
+  text-align: center;
+  border-radius: 0em;
+  padding: 1.5em 0 1.5em;
+
+}
+
+.menu:after {
+  content: attr(data-title);
+  width: 100%;
+  height: 150%;
+  background: #000;
+  color: #fff; 
+}
+
+.menu > span > span {
+  width: 120px;
+  color: #fff;
+}
+
+.menu.servicios > span > span {
+  background: #ffc000;
+}
+
+.menu.proyectos > span > span {
+  background: #00a53c;
+}
+
+.menu.recursos > span > span {
+  background: #b81800;
+}
+
+.menu.contacto > span > span {
+    background: #9600b4;
+}
+
+/* Lo que pasa con hover */
+
+.menu:hover > span {
+    height: 100%; 
+}
+
+/* Dando formato a lista */ 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li a {
+  display: inline;
+  float: left;
+  text-decoration: none;
+  font-family: sans;
+  text-align: center;
+}
+.caja{
+position: relative;
+  width: 200px;
+  color: #FFF;
+  text-align: right;
+  line-height: 0px;
+  margin: 45px;
+  float: left;
+  top: 0px;
+  height: 150px;
+  width: 300px;
+  }
+.caja7:hover{
+  opacity: 0.3;
+  text-align: center;
+
+}
+h1{
+	font-family:verdana;
+	
+}
+h2{
+	font-family: verdana;
+}
+	
+}
+
+h4{
+	font-family: verdana;
+	text-align: center;
+}

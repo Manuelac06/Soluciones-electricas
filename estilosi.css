@@ -1,0 +1,152 @@
+#thing {
+   padding: 10px;
+   border-radius: 5px;
+
+  /* HOVER OFF */
+   -webkit-transition: padding 2s;
+}
+
+#thing:hover {
+   padding: 20px;
+   border-radius: 15px;
+
+  /* HOVER ON */
+   -webkit-transition: border-radius 2s;
+}
+body {
+  background: #e7e8e9;
+  padding: 40px;
+}
+
+.btn {
+        background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+        border-radius: 40px;
+  box-sizing: border-box;
+        color: #00a84f;
+        display: block;
+        font: 1.125rem 'Oswald', Arial, sans-serif; /*18*/
+        height: 80px;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        padding: 4px;
+        position: relative;
+  text-decoration: none;
+        text-transform: uppercase;
+        width: 264px;
+        z-index: 2;
+}
+
+.btn:hover {
+        color: #fff;
+}
+
+.btn span {
+        align-items: center;
+        background: #e7e8e9;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        transition: background .5s ease;
+        width: 100%;
+}
+
+.btn:hover span {
+        background: transparent;
+}
+div.color {
+    margin: 121px 149px;
+    width: 483px;
+    height: 298px;
+    background: #676470;
+    color: #fff;
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 3.4em;
+    text-align: center;
+    line-height: 298px;
+    transition: all 0.3s ease;
+}
+
+div.color:hover {
+    background: #53a7ea;
+}
+.circle {
+        border-radius: 50%;
+        left: calc(50% - 6.25em);
+        top: calc(50% - 12.5em);
+        transform-origin: 50% 12.5em;
+        width: 12.5em;
+        height: 12.5em;
+        position: absolute;
+        box-shadow: 0 1em 2em rgba(0, 0, 0, .5);
+}
+
+.one,
+.three {
+        background: rgba(142, 92, 205, .75);
+        transition: background 1s ease-in;
+}
+
+.two,
+.four {
+        background: rgba(236, 252, 100, .75);
+}
+
+
+.one {
+        transform: rotateZ(0);
+}
+
+.two {
+        transform: rotateZ(90deg);
+}
+
+.three {
+        transform: rotateZ(180deg);
+}
+
+.four {
+        transform: rotateZ(-90deg);
+}
+
+.circle:hover {
+  background: rgba(142, 92, 205, .25);
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	width: 700px;
+}
+
+#contenedor {
+	width: 700px;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+#contenedor ul {
+	list-style: none;
+	width: 2800px;
+	display: flex;
+	
+	animation: slide 20s infinte alternate;
+}
+
+@keyframes slide {
+	0% {margin-left: 0px;}
+	20% {margin-left: 0px;}
+	
+	25% {margin-left: -700px;}
+	45% {margin-left: -700px;}
+	
+	50% {margin-left: -1400px;}
+	70% {margin-left: -1400px;}
+	
+	75% {margin-left: -2100px;}
+	100%{margin-left: -2100px;}
+}

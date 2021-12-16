@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+}
+
+		
+	
+#tarjetas {
+	
+			display: flex;
+			justify-content: center;
+			
+		  }
+	
+.tarjeta img {
+		      width: 100%;
+	         }
+ 
+ .tarjeta    {
+		      width: 20%;
+			  margin: 30px 30px 30px 30px;
+			  background: #FFFFFF;
+			  padding: 20px;
+			  text-align: center;
+			  box-shadow: 1px 7px 12px #000;
+			  }
+		
+h2 {
+	font-size: 20px;
+	color: #000;
+	 }
+.empresa	{
+	color: #008080;
+            }
+
+
+.Informacion	{
+	color: #000;
+            }
